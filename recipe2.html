@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 2 - Soft Chapati with Layers</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: green; 
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        section {
+            padding: 20px;
+            background-color: white; 
+            margin: 20px; 
+            border-radius: 10px; 
+        }
+        h2 {
+            color: #333;
+        }
+        h3 {
+            color: #555;
+        }
+        ul, ol {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation-buttons a {
+            text-decoration: none;
+        }
+        .navigation-buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: 'Times New Roman', Times, serif;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe 2 - Soft Chapati with Layers</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="recipe.html">RECIPE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section class="Menu">
+            <h2>Soft Chapati with Layers</h2>
+            <img src="./images/Premium Photo _ Swahili Chapati With Coconut Potatoes.jpeg" alt="Photo of Soft layered chapati">
+
+            <h3>Ingredients for Soft Chapati with Layers</h3>
+            <ul>
+                <li>400g All-purpose flour</li>
+                <li>1 1/2 teaspoon fine salt</li>
+                <li>270ml Warm water</li>
+                <li>1 cup Sunflower oil/ghee/melted margarine</li>
+            </ul>
+
+            <h3>Procedure for Soft Chapati with Layers</h3>
+            <ol>
+                <li>Stir the salt into the warm water to dissolve.</li>
+                <li>Make a well in the center of the flour and pour in the water. Knead for about 2-3 minutes then cover with cling film and leave to rest for 2 hours in a draught-free place.</li>
+                <li>Portion the dough into 6 balls and leave them in the bowl covered, as you work on them one by one.</li>
+                <li>Roll it as thin as you can get it (do not worry about the shape at this stage) on a lightly floured surface, drizzle 1 tbsp of oil on the chapati dough, then sprinkle a generous (1 tsp) of flour across before rolling the chapati into a log and twirl it into itself. Repeat for the rest and make sure to cover to avoid drying and skin forming.</li>
+                <li>Heat the cast iron pan as you roll out the chapati (start with the first one you had rolled and end with the last one), make sure to evenly roll it out but not too thin or too thick.</li>
+                <li>Place the chapati on the pan without oil and let it cook until it changes color on the top then flip it over, and as the bottom cooks, you can now add oil to the top. Flip it over again and add some oil to the now top then flip it back (so each side has been cooked twice). Each chapati should cook for at least 3 minutes and not more otherwise it will dry out.</li>
+                <li>Store the chapati in a large container and cover with a kitchen towel and cling film to retain the moisture.</li>
+            </ol>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <a href="menu.html">
+                <button>Go to Menu</button>
+            </a>
+            <a href="recipe1.html">
+                <button>Go to Honey Garlic Chicken Recipe</button>
+            </a>
+            <button id="previousButton">Previous</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script>
+        // JavaScript for the Previous Button
+        const previousButton = document.getElementById('previousButton');
+        previousButton.addEventListener('click', () => {
+            // Redirect to the last visited page
+            window.location.href = document.referrer || 'home.html';
+        });
+    </script>
+</body>
+</html>

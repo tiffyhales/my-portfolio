@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - My Favourite Food</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 0;
+            padding: 0;
+            background-image: url('./images/food-background.jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.8); 
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.9); 
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        img {
+            width: 200px; 
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: white;
+            background-color: rgba(51, 51, 51, 0.8); 
+            padding: 10px;
+        }
+        .recipe-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .recipe-buttons a {
+            text-decoration: none;
+        }
+        .recipe-buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: 'Times New Roman', Times, serif; 
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .recipe-buttons button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); 
+        }
+        .recipe-link-button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .recipe-link-button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Menu - My Favourite Food</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="recipe.html">RECIPE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2 style="text-align: center; color: white;">Explore My Favourite Recipes</h2>
+    <table>
+        <tr>
+            <td><strong>Honey Garlic Chicken Breast</strong></td>
+            <td>
+                <a href="recipe1.html">
+                    <img src="./images/honey garlic chicken.jpeg" alt="Honey Garlic Chicken Breast">
+                </a>
+                <a href="recipe.html">
+                    <button class="recipe-link-button">View Recipe 1</button>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td><strong>Soft Chapatis</strong></td>
+            <td>
+                <a href="recipe2.html">
+                    <img src="./images/Premium Photo _ Swahili Chapati With Coconut Potatoes.jpeg" alt="Soft Chapatis">
+                </a>
+                <a href="recipe2.html">
+                    <button class="recipe-link-button">View Recipe 2</button>
+                </a>
+            </td>
+        </tr>
+    </table>
+
+    <!-- Recipe Buttons -->
+    <div class="recipe-buttons">
+        <a href="home.html">
+            <button>Home</button>
+        </a>
+        <a href="about.html">
+            <button>Previous</button>
+        </a>
+    </div>
+
+    <footer>
+        © 2025 My Portfolio
+    </footer>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe 1 - Honey Garlic Chicken Breast</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: green; 
+        }
+        header {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav ul li a:hover {
+            color: #007BFF;
+        }
+        section {
+            padding: 20px;
+            background-color: white; 
+            margin: 20px; 
+            border-radius: 10px; 
+        }
+        h2 {
+            color: #333;
+            text-align: center; 
+        }
+        h3 {
+            color: #555;
+            text-align: center; 
+            font-weight: bold; 
+        }
+        ul {
+            line-height: 1.6;
+        }
+        .ingredients {
+            text-align: center; 
+            list-style-position: inside; 
+            padding-left: 0; 
+        }
+        .instructions {
+            padding-left: 20px; 
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        .navigation-buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .navigation-buttons a {
+            text-decoration: none;
+        }
+        .navigation-buttons button {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 0 10px;
+            font-family: 'Times New Roman', Times, serif;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .navigation-buttons button:hover {
+            background-color: #0056b3;
+            transform: translateY(-3px); 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recipe 1 - Honey Garlic Chicken Breast</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="recipe.html">RECIPE</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <section class="Menu">
+            <h2>Honey Garlic Chicken Breast</h2>
+            <img src="./images/Double Crunch Honey Garlic Chicken Breasts.jpeg" alt="Honey Garlic Chicken Breast image" style="display: block; margin: 0 auto;"> <!-- Centered image -->
+
+            <h3>Ingredients</h3>
+            <ul class="ingredients">
+                <li>500g / 1 lb chicken breast, boneless and skinless (2 pieces)</li>
+                <li>Salt and pepper</li>
+                <li>1/4 cup flour (Note 1)</li>
+                <li>3 1/2 tbsp (50g) unsalted butter (or 2 1/2 tbsp olive oil)</li>
+                <li>2 garlic cloves, minced</li>
+                <li>1 1/2 tbsp apple cider vinegar (or white or other clear vinegar)</li>
+                <li>1 tbsp soy sauce, light or all purpose (Note 2)</li>
+                <li>1/3 cup honey (or maple syrup)</li>
+            </ul>
+
+            <h3>Instructions:</h3>
+            <ul class="instructions">
+                <li>1. Cut the chicken breasts in half horizontally to create 4 steaks in total. Sprinkle each side with salt and pepper.</li>
+                <li>2. Place flour in a shallow dish. Coat chicken in flour and shake off excess.</li>
+                <li>3. Melt most of the butter in a large skillet over high heat – hold back about 1 tsp for later.</li>
+                <li>4. Place chicken in skillet and cook for 2 – 3 minutes until golden. Turn and cook the other side for 1 minute.</li>
+                <li>5. Turn heat down slightly to medium high.</li>
+                <li>6. Make a bit of room in the pan and add garlic and top with remaining dab of butter. Stir garlic briefly once butter melts.</li>
+                <li>7. Add vinegar, soy sauce, and honey. Stir / shake pan to combine. Bring sauce to simmer, then simmer for 1 minute or until slightly thickened.</li>
+                <li>8. Turn chicken to coat in sauce. If the sauce gets too thick, add a touch of water and stir.</li>
+                <li>9. Remove from stove immediately. Place chicken on plates and drizzle over remaining sauce.</li>
+            </ul>
+        </section>
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons">
+            <a href="recipe2.html">
+                <button>Chapati Recipe</button>
+            </a>
+            <button id="previousButton">Previous</button>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 My Portfolio</p>
+    </footer>
+
+    <script>
+        // JavaScript for the Previous Button
+        const previousButton = document.getElementById('previousButton');
+        previousButton.addEventListener('click', () => {
+            // Redirect to the last visited page
+            window.location.href = document.referrer || 'home.html';
+        });
+    </script>
+</body>
+</html>
